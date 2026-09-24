@@ -3,72 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دار النشر الدولية</title>
+  <meta name="description" content="مكتب مِداد للخدمات الأكاديمية: دعم الباحثين وطلاب الدراسات العليا في إعداد الأبحاث وتجهيزها للنشر والتحكيم والتوثيق والترجمة والتحليل الإحصائي.">
+  <meta name="keywords" content="خدمات أكاديمية, نشر الأبحاث, تحكيم, مراجعة لغوية, توثيق, ترجمة أكاديمية, دعم إحصائي">
+  <meta name="author" content="مكتب مِداد للخدمات الأكاديمية">
+  <meta name="theme-color" content="#173b5e">
+  <meta property="og:title" content="مكتب مِداد للخدمات الأكاديمية">
+  <meta property="og:description" content="خدمات أكاديمية متكاملة للباحثين وطلاب الدراسات العليا.">
+  <meta property="og:type" content="website">
+  <title>مكتب مِداد للخدمات الأكاديمية | دعم الباحثين والنشر العلمي</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23173b5e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='38' font-family='Arial' fill='%23d4a017'%3Eم%3C/text%3E%3C/svg%3E" type="image/svg+xml">
   <style>
+    :root { --navy: #173b5e; --navy-dark: #102b45; --gold: #d4a017; --gold-light: #f5e5b0; --ink: #243342; --muted: #5d6b78; --surface: #f7f9fb; --white: #fff; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Tahoma', Arial, sans-serif; line-height: 1.8; color: #333; }
-    header { background: #1a3c5e; color: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-    header h1 { font-size: 24px; }
-    nav a { color: white; text-decoration: none; margin-right: 25px; font-size: 16px; }
-    nav a:hover { text-decoration: underline; }
-    .hero { background: linear-gradient(rgba(26,60,94,0.85), rgba(26,60,94,0.85)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200'); background-size: cover; background-position: center; color: white; text-align: center; padding: 100px 20px; }
-    .hero h2 { font-size: 42px; margin-bottom: 20px; }
-    .hero p { font-size: 18px; max-width: 600px; margin: 0 auto; }
-    .btn { display: inline-block; margin-top: 30px; padding: 12px 35px; background: #d4a017; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; }
-    section { padding: 60px 40px; max-width: 1000px; margin: 0 auto; }
-    section h3 { font-size: 28px; margin-bottom: 25px; text-align: center; color: #1a3c5e; }
-    .services { display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; }
-    .service-card { background: #f7f7f7; padding: 30px; border-radius: 8px; width: 280px; text-align: center; }
-    .service-card h4 { color: #1a3c5e; margin-bottom: 10px; }
-    footer { background: #1a3c5e; color: white; text-align: center; padding: 25px; margin-top: 40px; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Tahoma, Arial, sans-serif; line-height: 1.85; color: var(--ink); background: var(--white); }
+    a { color: inherit; }
+    .container { width: min(1120px, calc(100% - 40px)); margin: auto; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(23, 59, 94, .98); color: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+    .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { color: var(--white); text-decoration: none; font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
+    .brand span { color: var(--gold); }
+    nav { display: flex; align-items: center; gap: 22px; }
+    nav a { color: var(--white); text-decoration: none; font-size: .95rem; transition: color .2s; }
+    nav a:hover, nav a:focus { color: var(--gold-light); }
+    .hero { min-height: 570px; display: grid; place-items: center; text-align: center; color: var(--white); padding: 90px 20px; background: linear-gradient(rgba(23,59,94,.86), rgba(16,43,69,.9)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600') center/cover; }
+    .hero-content { max-width: 790px; }
+    .eyebrow { color: var(--gold-light); font-weight: 700; letter-spacing: .5px; margin-bottom: 14px; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; margin-bottom: 20px; }
+    .hero p { max-width: 680px; margin: auto; font-size: clamp(1rem, 2vw, 1.2rem); color: #eef4f8; }
+    .btn { display: inline-block; margin-top: 30px; padding: 12px 30px; border: 2px solid var(--gold); border-radius: 6px; background: var(--gold); color: var(--navy-dark); text-decoration: none; font-weight: 700; transition: .2s; }
+    .btn:hover, .btn:focus { background: transparent; color: var(--white); }
+    section { padding: 76px 0; scroll-margin-top: 76px; }
+    section:nth-of-type(even) { background: var(--surface); }
+    .section-heading { text-align: center; max-width: 720px; margin: 0 auto 38px; }
+    .section-heading h2 { color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.35rem); margin-bottom: 10px; }
+    .section-heading p { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .card { background: var(--white); border: 1px solid #e3e9ee; border-radius: 10px; padding: 25px 20px; box-shadow: 0 5px 18px rgba(23,59,94,.06); }
+    .card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 9px; }
+    .card p { color: var(--muted); font-size: .94rem; }
+    .path-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .path-card { padding: 32px; border-radius: 10px; background: var(--navy); color: var(--white); border-top: 5px solid var(--gold); }
+    .path-card h3 { color: var(--gold-light); margin-bottom: 12px; }
+    .path-card p { color: #edf3f7; }
+    .path-card strong { display: block; color: var(--gold-light); margin-top: 16px; font-size: .95rem; }
+    .steps { counter-reset: step; }
+    .step { position: relative; padding-right: 62px; }
+    .step::before { counter-increment: step; content: counter(step); position: absolute; right: 18px; top: 22px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--navy-dark); font-weight: 700; }
+    .why { max-width: 850px; margin: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 34px; }
+    .why li { list-style: none; position: relative; padding-right: 28px; color: var(--muted); }
+    .why li::before { content: '✓'; position: absolute; right: 0; color: var(--gold); font-weight: 700; }
+    .contact-box { max-width: 760px; margin: auto; text-align: center; padding: 42px 25px; background: var(--navy); color: var(--white); border-radius: 12px; }
+    .contact-box h2 { color: var(--gold-light); margin-bottom: 10px; }
+    .contact-box p { color: #edf3f7; }
+    .contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+    .contact-links a { display: inline-block; padding: 10px 20px; border: 1px solid var(--gold); border-radius: 6px; color: var(--gold-light); text-decoration: none; }
+    .contact-links a:hover { background: var(--gold); color: var(--navy-dark); }
+    footer { padding: 26px 20px; text-align: center; background: var(--navy-dark); color: #e7edf2; font-size: .9rem; }
+    footer strong { color: var(--gold-light); }
+    @media (max-width: 850px) { .grid { grid-template-columns: repeat(2, 1fr); } .header-inner { flex-direction: column; padding: 14px 0; } nav { gap: 12px; flex-wrap: wrap; justify-content: center; } }
+    @media (max-width: 560px) { .container { width: min(100% - 28px, 1120px); } .grid, .path-grid, .why { grid-template-columns: 1fr; } .hero { min-height: 520px; } section { padding: 58px 0; } nav a { font-size: .82rem; } }
   </style>
 </head>
 <body>
   <header>
-    <h1>دار النشر الدولية</h1>
-    <nav>
-      <a href="#about">من نحن</a>
-      <a href="#services">خدماتنا</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">مكتب <span>مِداد</span></a>
+      <nav aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#publishing">مسارات النشر</a>
+        <a href="#process">كيف نعمل</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="hero">
-    <h2>ننشر أفكارك حول العالم</h2>
-    <p>مركز نشر دولي يساعد المؤلفين على الوصول لقرائهم في كل مكان</p>
-    <a href="#contact" class="btn">ابدأ معنا</a>
-  </div>
-
-  <section id="about">
-    <h3>من نحن</h3>
-    <p>دار النشر الدولية مركز متخصص في نشر وتوزيع الكتب على مستوى عالمي، نقدم خدمات احترافية للمؤلفين من التحرير حتى التوزيع الدولي.</p>
-  </section>
-
-  <section id="services">
-    <h3>خدماتنا</h3>
-    <div class="services">
-      <div class="service-card">
-        <h4>النشر الدولي</h4>
-        <p>نشر كتابك في أسواق متعددة حول العالم</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">دعم أكاديمي يواكب رحلتك البحثية</p>
+        <h1>مكتب مِداد للخدمات الأكاديمية</h1>
+        <p>نساعد الباحثين وطلاب الدراسات العليا على تطوير أعمالهم الأكاديمية وتجهيزها للنشر بوضوح، وعناية، ومنهجية.</p>
+        <a class="btn" href="#contact">تواصل معنا</a>
       </div>
-      <div class="service-card">
-        <h4>الترقيم الدولي ISBN</h4>
-        <p>إصدار أرقام ISBN معتمدة لجميع إصداراتك</p>
-      </div>
-      <div class="service-card">
-        <h4>التوزيع</h4>
-        <p>شبكة توزيع واسعة تصل لأهم المكتبات والمنصات</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h3>تواصل معنا</h3>
-    <p style="text-align:center;">للاستفسار والتعاون، راسلنا على: info@example.com</p>
-  </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-heading"><h2>خدماتنا</h2><p>حلول أكاديمية متكاملة تراعي متطلبات البحث والمجلة والجهة المستهدفة.</p></div>
+        <div class="grid">
+          <article class="card"><h3>اختيار المجلة والتحقق من الفهرسة</h3><p>مساعدة في تحديد المجلة الأنسب والتحقق من قواعد الفهرسة والملاءمة الموضوعية.</p></article>
+          <article class="card"><h3>تجهيز البحث وفق تعليمات المجلة</h3><p>مراجعة بنية البحث ومتطلباته وإعداده وفق دليل المؤلفين الخاص بالمجلة.</p></article>
+          <article class="card"><h3>التقديم ومتابعة التحكيم</h3><p>إرشاد في إجراءات التقديم ومتابعة مراحل التحكيم وفق القنوات الرسمية.</p></article>
+          <article class="card"><h3>الرد على المحكمين</h3><p>تنظيم الملاحظات وإعداد ردود علمية واضحة مع توضيح التعديلات المنفذة.</p></article>
+          <article class="card"><h3>المراجعة اللغوية</h3><p>تحسين سلامة اللغة ووضوح الأسلوب مع الحفاظ على المعنى والمحتوى العلمي.</p></article>
+          <article class="card"><h3>التنسيق والتوثيق</h3><p>تنسيق البحث وقائمة المراجع وفق النمط المطلوب مثل APA وغيره.</p></article>
+          <article class="card"><h3>الترجمة الأكاديمية</h3><p>ترجمة أكاديمية تراعي المصطلحات والتماسك والسياق البحثي.</p></article>
+          <article class="card"><h3>الدعم الإحصائي</h3><p>مساندة في اختيار الأساليب الإحصائية المناسبة وقراءة النتائج وعرضها.</p></article>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2026 دار النشر الدولية - جميع الحقوق محفوظة</p>
-  </footer>
+    <section id="publishing">
+      <div class="container">
+        <div class="section-heading"><h2>مسارات النشر</h2><p>نساعدك على فهم متطلبات المسار المناسب لطبيعة بحثك وتخصصك.</p></div>
+        <div class="path-grid">
+          <article class="path-card"><h3>النشر الدولي</h3><p>تجهيز البحث للمجلات الدولية المناسبة، ومراجعة متطلبات التقديم واللغة والتنسيق والمراسلات الأكاديمية.</p><strong>مع مراعاة سياسات المجلة وإجراءاتها المعلنة.</strong></article>
+          <article class="path-card"><h3>النشر المحلي والعربي</h3><p>إعداد البحث للمجلات والدوريات المحلية والعربية، مع التحقق من متطلبات الفهرسة ذات الصلة.</p><strong>ومن أمثلتها: EKB، ودار المنظومة، وArab Citation Index.</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="container">
+        <div class="section-heading"><h2>كيف نعمل؟</h2><p>خطوات واضحة تبدأ بفهم احتياجك وتنتهي بتسليم منظم.</p></div>
+        <div class="grid steps">
+          <article class="card step"><h3>الاستماع والتقييم</h3><p>نفهم موضوعك ومرحلة بحثك والهدف الأكاديمي المطلوب.</p></article>
+          <article class="card step"><h3>خطة العمل</h3><p>نحدد نطاق الخدمة والمتطلبات والخطوات المناسبة بوضوح.</p></article>
+          <article class="card step"><h3>التنفيذ والمراجعة</h3><p>نعمل على الملفات وفق المعايير المتفق عليها ونراجع المخرجات.</p></article>
+          <article class="card step"><h3>التسليم والمتابعة</h3><p>نسلم العمل منظمًا ونوضح الملاحظات والخطوات التالية عند الحاجة.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <div class="section-heading"><h2>لماذا نحن؟</h2><p>لأن جودة العمل الأكاديمي تبدأ من فهم التفاصيل واحترام طبيعة البحث.</p></div>
+        <ul class="why"><li>منهجية واضحة وتواصل منظم خلال مراحل العمل.</li><li>اهتمام بالتفاصيل ومتطلبات كل مجلة أو جهة.</li><li>لغة عربية سليمة وصياغة أكاديمية مناسبة.</li><li>التزام بالخصوصية والتعامل المسؤول مع الملفات.</li><li>خدمات مرنة تناسب احتياجات الباحث ومرحلة بحثه.</li><li>مساندة إرشادية دون ادعاء ضمان القبول أو النشر.</li></ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box"><h2>تواصل معنا</h2><p>أرسل استفسارك وملخصًا عن احتياجك الأكاديمي، وسنساعدك على تحديد الخطوة المناسبة.</p><div class="contact-links"><a href="https://wa.me/20XXXXXXXXXX" target="_blank" rel="noopener">تواصل عبر واتساب</a><a href="mailto:YOUR_EMAIL">راسلنا عبر البريد</a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 <strong>مكتب مِداد للخدمات الأكاديمية</strong> — جميع الحقوق محفوظة.</p></footer>
 </body>
 </html>
