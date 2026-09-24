@@ -3,78 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مكتب مِداد للخدمات الأكاديمية: دعم الباحثين وطلاب الدراسات العليا في إعداد الأبحاث وتجهيزها للنشر والتحكيم والتوثيق والترجمة والتحليل الإحصائي.">
-  <meta name="keywords" content="خدمات أكاديمية, نشر الأبحاث, تحكيم, مراجعة لغوية, توثيق, ترجمة أكاديمية, دعم إحصائي">
-  <meta name="author" content="مكتب مِداد للخدمات الأكاديمية">
+  <meta name="description" content="مركز دكتور سكوبس للخدمات الأكاديمية والنشر العلمي: خدمات متكاملة للباحثين وطلاب الدراسات العليا بالعربية والإنجليزية.">
+  <meta name="keywords" content="دكتور سكوبس, خدمات أكاديمية, نشر دولي, تحرير أكاديمي, اختيار مجلة, تحكيم, Scopus, EKB, Arab Citation Index">
+  <meta name="author" content="مركز دكتور سكوبس">
   <meta name="theme-color" content="#173b5e">
-  <meta property="og:title" content="مكتب مِداد للخدمات الأكاديمية">
-  <meta property="og:description" content="خدمات أكاديمية متكاملة للباحثين وطلاب الدراسات العليا.">
+  <meta property="og:title" content="مركز دكتور سكوبس | Doctor Scopus Center">
+  <meta property="og:description" content="خدمات أكاديمية متكاملة للباحثين وطلاب الدراسات العليا بالعربية والإنجليزية.">
   <meta property="og:type" content="website">
-  <title>مكتب مِداد للخدمات الأكاديمية | دعم الباحثين والنشر العلمي</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23173b5e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='38' font-family='Arial' fill='%23d4a017'%3Eم%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <title>مركز دكتور سكوبس | Doctor Scopus Center</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23173b5e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='32' font-family='Arial' fill='%23d4a017'%3EDS%3C/text%3E%3C/svg%3E" type="image/svg+xml">
   <style>
-    :root { --navy: #173b5e; --navy-dark: #102b45; --gold: #d4a017; --gold-light: #f5e5b0; --ink: #243342; --muted: #5d6b78; --surface: #f7f9fb; --white: #fff; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Tahoma, Arial, sans-serif; line-height: 1.85; color: var(--ink); background: var(--white); }
-    a { color: inherit; }
-    .container { width: min(1120px, calc(100% - 40px)); margin: auto; }
-    header { position: sticky; top: 0; z-index: 10; background: rgba(23, 59, 94, .98); color: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,.12); }
-    .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { color: var(--white); text-decoration: none; font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
-    .brand span { color: var(--gold); }
-    nav { display: flex; align-items: center; gap: 22px; }
-    nav a { color: var(--white); text-decoration: none; font-size: .95rem; transition: color .2s; }
-    nav a:hover, nav a:focus { color: var(--gold-light); }
-    .hero { min-height: 570px; display: grid; place-items: center; text-align: center; color: var(--white); padding: 90px 20px; background: linear-gradient(rgba(23,59,94,.86), rgba(16,43,69,.9)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600') center/cover; }
-    .hero-content { max-width: 790px; }
-    .eyebrow { color: var(--gold-light); font-weight: 700; letter-spacing: .5px; margin-bottom: 14px; }
-    .hero h1 { font-size: clamp(2rem, 5vw, 3.7rem); line-height: 1.35; margin-bottom: 20px; }
-    .hero p { max-width: 680px; margin: auto; font-size: clamp(1rem, 2vw, 1.2rem); color: #eef4f8; }
-    .btn { display: inline-block; margin-top: 30px; padding: 12px 30px; border: 2px solid var(--gold); border-radius: 6px; background: var(--gold); color: var(--navy-dark); text-decoration: none; font-weight: 700; transition: .2s; }
-    .btn:hover, .btn:focus { background: transparent; color: var(--white); }
-    section { padding: 76px 0; scroll-margin-top: 76px; }
-    section:nth-of-type(even) { background: var(--surface); }
-    .section-heading { text-align: center; max-width: 720px; margin: 0 auto 38px; }
-    .section-heading h2 { color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.35rem); margin-bottom: 10px; }
-    .section-heading p { color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-    .card { background: var(--white); border: 1px solid #e3e9ee; border-radius: 10px; padding: 25px 20px; box-shadow: 0 5px 18px rgba(23,59,94,.06); }
-    .card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 9px; }
-    .card p { color: var(--muted); font-size: .94rem; }
-    .path-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-    .path-card { padding: 32px; border-radius: 10px; background: var(--navy); color: var(--white); border-top: 5px solid var(--gold); }
-    .path-card h3 { color: var(--gold-light); margin-bottom: 12px; }
-    .path-card p { color: #edf3f7; }
-    .path-card strong { display: block; color: var(--gold-light); margin-top: 16px; font-size: .95rem; }
-    .steps { counter-reset: step; }
-    .step { position: relative; padding-right: 62px; }
-    .step::before { counter-increment: step; content: counter(step); position: absolute; right: 18px; top: 22px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--navy-dark); font-weight: 700; }
-    .why { max-width: 850px; margin: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 34px; }
-    .why li { list-style: none; position: relative; padding-right: 28px; color: var(--muted); }
-    .why li::before { content: '✓'; position: absolute; right: 0; color: var(--gold); font-weight: 700; }
-    .contact-box { max-width: 760px; margin: auto; text-align: center; padding: 42px 25px; background: var(--navy); color: var(--white); border-radius: 12px; }
-    .contact-box h2 { color: var(--gold-light); margin-bottom: 10px; }
-    .contact-box p { color: #edf3f7; }
-    .contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
-    .contact-links a { display: inline-block; padding: 10px 20px; border: 1px solid var(--gold); border-radius: 6px; color: var(--gold-light); text-decoration: none; }
-    .contact-links a:hover { background: var(--gold); color: var(--navy-dark); }
-    footer { padding: 26px 20px; text-align: center; background: var(--navy-dark); color: #e7edf2; font-size: .9rem; }
-    footer strong { color: var(--gold-light); }
-    @media (max-width: 850px) { .grid { grid-template-columns: repeat(2, 1fr); } .header-inner { flex-direction: column; padding: 14px 0; } nav { gap: 12px; flex-wrap: wrap; justify-content: center; } }
-    @media (max-width: 560px) { .container { width: min(100% - 28px, 1120px); } .grid, .path-grid, .why { grid-template-columns: 1fr; } .hero { min-height: 520px; } section { padding: 58px 0; } nav a { font-size: .82rem; } }
+    :root { --navy:#173b5e; --navy-dark:#102b45; --gold:#d4a017; --gold-light:#f5e5b0; --ink:#243342; --muted:#5d6b78; --surface:#f7f9fb; --white:#fff; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Tahoma,Arial,sans-serif; line-height:1.85; color:var(--ink); background:var(--white); }
+    body[dir="ltr"] { font-family:Arial,Helvetica,sans-serif; }
+    a { color:inherit; }
+    .container { width:min(1160px,calc(100% - 40px)); margin:auto; }
+    header { position:sticky; top:0; z-index:10; background:rgba(23,59,94,.98); color:var(--white); box-shadow:0 2px 12px rgba(0,0,0,.12); }
+    .header-inner { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { color:var(--white); text-decoration:none; font-size:1.35rem; font-weight:700; white-space:nowrap; }
+    .brand span { color:var(--gold); }
+    nav { display:flex; align-items:center; gap:18px; }
+    nav a { color:var(--white); text-decoration:none; font-size:.9rem; transition:color .2s; }
+    nav a:hover,nav a:focus { color:var(--gold-light); }
+    .lang-btn { border:1px solid var(--gold); border-radius:5px; padding:7px 12px; background:transparent; color:var(--gold-light); cursor:pointer; font:inherit; }
+    .hero { min-height:560px; display:grid; place-items:center; text-align:center; color:var(--white); padding:85px 20px; background:linear-gradient(rgba(23,59,94,.86),rgba(16,43,69,.9)),url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600') center/cover; }
+    .hero-content { max-width:820px; }
+    .eyebrow { color:var(--gold-light); font-weight:700; margin-bottom:14px; }
+    .hero h1 { font-size:clamp(2rem,5vw,3.7rem); line-height:1.35; margin-bottom:20px; }
+    .hero p { max-width:700px; margin:auto; font-size:clamp(1rem,2vw,1.2rem); color:#eef4f8; }
+    .btn { display:inline-block; margin-top:30px; padding:12px 30px; border:2px solid var(--gold); border-radius:6px; background:var(--gold); color:var(--navy-dark); text-decoration:none; font-weight:700; transition:.2s; }
+    .btn:hover,.btn:focus { background:transparent; color:var(--white); }
+    section { padding:76px 0; scroll-margin-top:76px; }
+    section:nth-of-type(even) { background:var(--surface); }
+    .section-heading { text-align:center; max-width:780px; margin:0 auto 38px; }
+    .section-heading h2 { color:var(--navy); font-size:clamp(1.7rem,3vw,2.35rem); margin-bottom:10px; }
+    .section-heading p { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+    .card { background:var(--white); border:1px solid #e3e9ee; border-radius:10px; padding:23px 20px; box-shadow:0 5px 18px rgba(23,59,94,.06); }
+    .card h3 { color:var(--navy); font-size:1.05rem; margin-bottom:9px; }
+    .card p { color:var(--muted); font-size:.92rem; }
+    .number { display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%; background:var(--gold); color:var(--navy-dark); font-weight:bold; margin-bottom:10px; }
+    .path-grid,.partners { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+    .path-card { padding:30px; border-radius:10px; background:var(--navy); color:var(--white); border-top:5px solid var(--gold); }
+    .path-card h3 { color:var(--gold-light); margin-bottom:12px; }
+    .path-card p { color:#edf3f7; }
+    .path-card strong { display:block; color:var(--gold-light); margin-top:15px; font-size:.94rem; }
+    .partner-card { background:var(--white); border:1px solid #e3e9ee; border-radius:10px; padding:22px; }
+    .partner-card h3 { color:var(--navy); margin-bottom:7px; }
+    .partner-card p { color:var(--muted); font-size:.92rem; margin-bottom:9px; }
+    .partner-card a { color:var(--navy); font-weight:bold; }
+    .steps { counter-reset:step; }
+    .step { position:relative; padding-right:62px; }
+    body[dir="ltr"] .step { padding-right:20px; padding-left:62px; }
+    .step::before { counter-increment:step; content:counter(step); position:absolute; right:18px; top:22px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; background:var(--gold); color:var(--navy-dark); font-weight:700; }
+    body[dir="ltr"] .step::before { right:auto; left:18px; }
+    .why { max-width:900px; margin:auto; display:grid; grid-template-columns:repeat(2,1fr); gap:16px 34px; }
+    .why li { list-style:none; position:relative; padding-right:28px; color:var(--muted); }
+    body[dir="ltr"] .why li { padding-right:0; padding-left:28px; }
+    .why li::before { content:'✓'; position:absolute; right:0; color:var(--gold); font-weight:700; }
+    body[dir="ltr"] .why li::before { right:auto; left:0; }
+    .notice { max-width:850px; margin:28px auto 0; padding:16px 20px; border-right:4px solid var(--gold); background:var(--gold-light); color:var(--navy-dark); }
+    body[dir="ltr"] .notice { border-right:0; border-left:4px solid var(--gold); }
+    .contact-box { max-width:780px; margin:auto; text-align:center; padding:42px 25px; background:var(--navy); color:var(--white); border-radius:12px; }
+    .contact-box h2 { color:var(--gold-light); margin-bottom:10px; }
+    .contact-box p { color:#edf3f7; }
+    .contact-links { display:flex; justify-content:center; flex-wrap:wrap; gap:14px; margin-top:24px; }
+    .contact-links a { display:inline-block; padding:10px 20px; border:1px solid var(--gold); border-radius:6px; color:var(--gold-light); text-decoration:none; }
+    .contact-links a:hover { background:var(--gold); color:var(--navy-dark); }
+    footer { padding:26px 20px; text-align:center; background:var(--navy-dark); color:#e7edf2; font-size:.9rem; }
+    footer strong { color:var(--gold-light); }
+    @media(max-width:900px) { .grid { grid-template-columns:repeat(2,1fr); } .header-inner { flex-direction:column; padding:14px 0; } nav { gap:11px; flex-wrap:wrap; justify-content:center; } }
+    @media(max-width:560px) { .container { width:min(100% - 28px,1160px); } .grid,.path-grid,.partners,.why { grid-template-columns:1fr; } .hero { min-height:520px; } section { padding:58px 0; } nav a { font-size:.78rem; } }
   </style>
 </head>
 <body>
   <header>
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="العودة إلى الرئيسية">مكتب <span>مِداد</span></a>
-      <nav aria-label="التنقل الرئيسي">
-        <a href="#home">الرئيسية</a>
-        <a href="#services">خدماتنا</a>
-        <a href="#publishing">مسارات النشر</a>
-        <a href="#process">كيف نعمل</a>
-        <a href="#contact">تواصل معنا</a>
+      <a class="brand" href="#home" aria-label="Home">مركز <span>دكتور سكوبس</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+        <a href="#publishing" data-ar="مسارات النشر" data-en="Publishing Paths">مسارات النشر</a>
+        <a href="#process" data-ar="كيف نعمل" data-en="How We Work">كيف نعمل</a>
+        <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+        <button class="lang-btn" id="languageToggle" type="button">English</button>
       </nav>
     </div>
   </header>
@@ -82,65 +96,112 @@
   <main>
     <section id="home" class="hero">
       <div class="hero-content">
-        <p class="eyebrow">دعم أكاديمي يواكب رحلتك البحثية</p>
-        <h1>مكتب مِداد للخدمات الأكاديمية</h1>
-        <p>نساعد الباحثين وطلاب الدراسات العليا على تطوير أعمالهم الأكاديمية وتجهيزها للنشر بوضوح، وعناية، ومنهجية.</p>
-        <a class="btn" href="#contact">تواصل معنا</a>
+        <p class="eyebrow" data-ar="دعم أكاديمي يواكب رحلتك البحثية" data-en="Academic support for every stage of your research journey">دعم أكاديمي يواكب رحلتك البحثية</p>
+        <h1 data-ar="مركز دكتور سكوبس للخدمات الأكاديمية" data-en="Doctor Scopus Center for Academic Services">مركز دكتور سكوبس للخدمات الأكاديمية</h1>
+        <p data-ar="نساعد الباحثين وطلاب الدراسات العليا على تطوير أعمالهم الأكاديمية وتجهيزها للنشر بوضوح وعناية ومنهجية." data-en="We support researchers and graduate students in developing and preparing their academic work for publication with clarity, care, and a structured approach.">نساعد الباحثين وطلاب الدراسات العليا على تطوير أعمالهم الأكاديمية وتجهيزها للنشر بوضوح وعناية ومنهجية.</p>
+        <a class="btn" href="#contact" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a>
       </div>
     </section>
 
     <section id="services">
       <div class="container">
-        <div class="section-heading"><h2>خدماتنا</h2><p>حلول أكاديمية متكاملة تراعي متطلبات البحث والمجلة والجهة المستهدفة.</p></div>
+        <div class="section-heading"><h2 data-ar="خدمات النشر الدولي" data-en="International Publishing Services">خدمات النشر الدولي</h2><p data-ar="خدمات عملية تغطي مراحل البحث من التقييم الأولي حتى ما بعد القبول، مع احترام أخلاقيات البحث العلمي." data-en="Practical support from initial assessment through post-acceptance, with respect for research integrity.">خدمات عملية تغطي مراحل البحث من التقييم الأولي حتى ما بعد القبول، مع احترام أخلاقيات البحث العلمي.</p></div>
         <div class="grid">
-          <article class="card"><h3>اختيار المجلة والتحقق من الفهرسة</h3><p>مساعدة في تحديد المجلة الأنسب والتحقق من قواعد الفهرسة والملاءمة الموضوعية.</p></article>
-          <article class="card"><h3>تجهيز البحث وفق تعليمات المجلة</h3><p>مراجعة بنية البحث ومتطلباته وإعداده وفق دليل المؤلفين الخاص بالمجلة.</p></article>
-          <article class="card"><h3>التقديم ومتابعة التحكيم</h3><p>إرشاد في إجراءات التقديم ومتابعة مراحل التحكيم وفق القنوات الرسمية.</p></article>
-          <article class="card"><h3>الرد على المحكمين</h3><p>تنظيم الملاحظات وإعداد ردود علمية واضحة مع توضيح التعديلات المنفذة.</p></article>
-          <article class="card"><h3>المراجعة اللغوية</h3><p>تحسين سلامة اللغة ووضوح الأسلوب مع الحفاظ على المعنى والمحتوى العلمي.</p></article>
-          <article class="card"><h3>التنسيق والتوثيق</h3><p>تنسيق البحث وقائمة المراجع وفق النمط المطلوب مثل APA وغيره.</p></article>
-          <article class="card"><h3>الترجمة الأكاديمية</h3><p>ترجمة أكاديمية تراعي المصطلحات والتماسك والسياق البحثي.</p></article>
-          <article class="card"><h3>الدعم الإحصائي</h3><p>مساندة في اختيار الأساليب الإحصائية المناسبة وقراءة النتائج وعرضها.</p></article>
+          <article class="card"><span class="number">1</span><h3 data-ar="تقييم جاهزية البحث للنشر" data-en="Publication Readiness Assessment">تقييم جاهزية البحث للنشر</h3><p data-ar="مراجعة ما قبل التقديم لتحديد نقاط القوة وما يحتاج إلى تحسين." data-en="A pre-submission review to identify strengths and areas for improvement.">مراجعة ما قبل التقديم لتحديد نقاط القوة وما يحتاج إلى تحسين.</p></article>
+          <article class="card"><span class="number">2</span><h3 data-ar="اختيار المجلة المناسبة" data-en="Journal Selection">اختيار المجلة المناسبة</h3><p data-ar="ترشيح مجلات ملائمة لموضوع البحث ومستواه ومتطلباته." data-en="Shortlisting journals aligned with the topic, level, and requirements of your research.">ترشيح مجلات ملائمة لموضوع البحث ومستواه ومتطلباته.</p></article>
+          <article class="card"><span class="number">3</span><h3 data-ar="التحقق من الفهرسة والمجلات المفترسة" data-en="Indexing and Predatory Journal Screening">التحقق من الفهرسة والمجلات المفترسة</h3><p data-ar="فحص موثوقية المجلة وفهرستها والتنبيه إلى المؤشرات التحذيرية." data-en="Checking journal credibility and indexing while identifying warning signs.">فحص موثوقية المجلة وفهرستها والتنبيه إلى المؤشرات التحذيرية.</p></article>
+          <article class="card"><span class="number">4</span><h3 data-ar="مراجعة منهجية البحث وتصميمه" data-en="Methodology and Study Design Review">مراجعة منهجية البحث وتصميمه</h3><p data-ar="قراءة منهجية للتصميم والأدوات واتساقها مع سؤال البحث." data-en="A methodological review of the design, tools, and alignment with the research question.">قراءة منهجية للتصميم والأدوات واتساقها مع سؤال البحث.</p></article>
+          <article class="card"><span class="number">5</span><h3 data-ar="الدعم الإحصائي وتحليل البيانات" data-en="Statistical Support and Data Analysis">الدعم الإحصائي وتحليل البيانات</h3><p data-ar="مساندة في اختيار الأساليب المناسبة وقراءة النتائج وعرضها." data-en="Support in selecting appropriate methods, interpreting results, and presenting them.">مساندة في اختيار الأساليب المناسبة وقراءة النتائج وعرضها.</p></article>
+          <article class="card"><span class="number">6</span><h3 data-ar="البحث عن الدراسات السابقة والفجوة البحثية" data-en="Literature Search and Research Gap">البحث عن الدراسات السابقة والفجوة البحثية</h3><p data-ar="إرشاد في تنظيم الأدبيات وتحديد الفجوة بما يخدم موضوع البحث." data-en="Guidance in organizing the literature and identifying a relevant research gap.">إرشاد في تنظيم الأدبيات وتحديد الفجوة بما يخدم موضوع البحث.</p></article>
+          <article class="card"><span class="number">7</span><h3 data-ar="التحرير اللغوي بالإنجليزية" data-en="English Language Editing">التحرير اللغوي بالإنجليزية</h3><p data-ar="تحسين اللغة والوضوح والأسلوب الأكاديمي مع الحفاظ على المعنى." data-en="Improving language, clarity, and academic style while preserving meaning.">تحسين اللغة والوضوح والأسلوب الأكاديمي مع الحفاظ على المعنى.</p></article>
+          <article class="card"><span class="number">8</span><h3 data-ar="التحرير العلمي" data-en="Scientific Editing">التحرير العلمي</h3><p data-ar="مراجعة وضوح الحجة وتسلسل الأفكار وبنية البحث." data-en="Reviewing the clarity of the argument, flow of ideas, and manuscript structure.">مراجعة وضوح الحجة وتسلسل الأفكار وبنية البحث.</p></article>
+          <article class="card"><span class="number">9</span><h3 data-ar="الترجمة الأكاديمية" data-en="Academic Translation">الترجمة الأكاديمية</h3><p data-ar="ترجمة بين العربية والإنجليزية تراعي المصطلحات والسياق البحثي." data-en="Arabic-English translation that respects terminology and research context.">ترجمة بين العربية والإنجليزية تراعي المصطلحات والسياق البحثي.</p></article>
+          <article class="card"><span class="number">10</span><h3 data-ar="تنسيق البحث حسب تعليمات المجلة" data-en="Journal Formatting">تنسيق البحث حسب تعليمات المجلة</h3><p data-ar="ضبط أقسام المخطوطة والجداول والأشكال وفق دليل المؤلفين." data-en="Adjusting manuscript sections, tables, and figures to author guidelines.">ضبط أقسام المخطوطة والجداول والأشكال وفق دليل المؤلفين.</p></article>
+          <article class="card"><span class="number">11</span><h3 data-ar="إدارة المراجع والتوثيق" data-en="Reference Management and Citation">إدارة المراجع والتوثيق</h3><p data-ar="تنظيم المراجع وتنسيقها باستخدام Zotero أو EndNote وغيرها." data-en="Organizing and formatting references using Zotero, EndNote, and similar tools.">تنظيم المراجع وتنسيقها باستخدام Zotero أو EndNote وغيرها.</p></article>
+          <article class="card"><span class="number">12</span><h3 data-ar="تصميم الرسوم والجداول" data-en="Figures, Tables, and Charts">تصميم الرسوم والجداول</h3><p data-ar="تحسين عرض البيانات بصريًا في رسوم وجداول وأشكال بيانية واضحة." data-en="Improving visual presentation through clear figures, tables, and charts.">تحسين عرض البيانات بصريًا في رسوم وجداول وأشكال بيانية واضحة.</p></article>
+          <article class="card"><span class="number">13</span><h3 data-ar="تحسين الملخص والعنوان والكلمات المفتاحية" data-en="Title, Abstract, and Keywords">تحسين الملخص والعنوان والكلمات المفتاحية</h3><p data-ar="صياغة أكثر وضوحًا واتساقًا مع محتوى البحث وموضوع المجلة." data-en="Clearer wording aligned with the manuscript and journal scope.">صياغة أكثر وضوحًا واتساقًا مع محتوى البحث وموضوع المجلة.</p></article>
+          <article class="card"><span class="number">14</span><h3 data-ar="فحص التشابه وتصحيح الاقتباس" data-en="Similarity and Citation Review">فحص التشابه وتصحيح الاقتباس</h3><p data-ar="مراجعة الاقتباسات والتوثيق والتنبيه إلى مواضع التشابه لمعالجتها علميًا." data-en="Reviewing citations and similarity indicators for responsible academic correction.">مراجعة الاقتباسات والتوثيق والتنبيه إلى مواضع التشابه لمعالجتها علميًا.</p></article>
+          <article class="card"><span class="number">15</span><h3 data-ar="كتابة خطاب التقديم" data-en="Cover Letter Preparation">كتابة خطاب التقديم</h3><p data-ar="إعداد خطاب تقديم مهني يوضح قيمة البحث وملاءمته للمجلة." data-en="Preparing a professional cover letter explaining the manuscript's value and fit.">إعداد خطاب تقديم مهني يوضح قيمة البحث وملاءمته للمجلة.</p></article>
+          <article class="card"><span class="number">16</span><h3 data-ar="ORCID ومنصات المجلات" data-en="ORCID and Submission Platforms">ORCID ومنصات المجلات</h3><p data-ar="إرشاد في إنشاء الحسابات واستكمال التقديم عبر المنصات الرسمية." data-en="Guidance on account setup and submission through official platforms.">إرشاد في إنشاء الحسابات واستكمال التقديم عبر المنصات الرسمية.</p></article>
+          <article class="card"><span class="number">17</span><h3 data-ar="متابعة التحكيم والتواصل مع المحرر" data-en="Peer Review Follow-up">متابعة التحكيم والتواصل مع المحرر</h3><p data-ar="تنظيم المتابعة والمراسلات المهنية مع الالتزام بسياسات المجلة." data-en="Organizing follow-up and professional correspondence within journal policies.">تنظيم المتابعة والمراسلات المهنية مع الالتزام بسياسات المجلة.</p></article>
+          <article class="card"><span class="number">18</span><h3 data-ar="الرد على المحكمين وجدول التعديلات" data-en="Reviewer Responses and Revision Table">الرد على المحكمين وجدول التعديلات</h3><p data-ar="صياغة ردود واضحة وإعداد جدول يربط الملاحظات بالتعديلات." data-en="Writing clear responses and preparing a table linking comments to revisions.">صياغة ردود واضحة وإعداد جدول يربط الملاحظات بالتعديلات.</p></article>
+          <article class="card"><span class="number">19</span><h3 data-ar="تحويل البحث إلى مجلة بديلة" data-en="Alternative Journal Strategy">تحويل البحث إلى مجلة بديلة</h3><p data-ar="مراجعة أسباب الرفض وتحديد مسار بديل مناسب دون وعود بالقبول." data-en="Reviewing rejection reasons and identifying a suitable alternative without acceptance promises.">مراجعة أسباب الرفض وتحديد مسار بديل مناسب دون وعود بالقبول.</p></article>
+          <article class="card"><span class="number">20</span><h3 data-ar="مراجعة البروفات والترويج العلمي" data-en="Proofreading and Research Visibility">مراجعة البروفات والترويج العلمي</h3><p data-ar="مراجعة النسخة النهائية بعد القبول وإرشاد في تحسين ظهور البحث عبر Google Scholar وResearchGate." data-en="Reviewing final proofs and guiding responsible visibility through Google Scholar and ResearchGate.">مراجعة النسخة النهائية بعد القبول وإرشاد في تحسين ظهور البحث عبر Google Scholar وResearchGate.</p></article>
         </div>
       </div>
     </section>
 
     <section id="publishing">
       <div class="container">
-        <div class="section-heading"><h2>مسارات النشر</h2><p>نساعدك على فهم متطلبات المسار المناسب لطبيعة بحثك وتخصصك.</p></div>
+        <div class="section-heading"><h2 data-ar="مسارات النشر" data-en="Publishing Paths">مسارات النشر</h2><p data-ar="نساعدك على فهم متطلبات المسار الأنسب لطبيعة بحثك وتخصصك." data-en="We help you understand the requirements of the path best suited to your research and field.">نساعدك على فهم متطلبات المسار الأنسب لطبيعة بحثك وتخصصك.</p></div>
         <div class="path-grid">
-          <article class="path-card"><h3>النشر الدولي</h3><p>تجهيز البحث للمجلات الدولية المناسبة، ومراجعة متطلبات التقديم واللغة والتنسيق والمراسلات الأكاديمية.</p><strong>مع مراعاة سياسات المجلة وإجراءاتها المعلنة.</strong></article>
-          <article class="path-card"><h3>النشر المحلي والعربي</h3><p>إعداد البحث للمجلات والدوريات المحلية والعربية، مع التحقق من متطلبات الفهرسة ذات الصلة.</p><strong>ومن أمثلتها: EKB، ودار المنظومة، وArab Citation Index.</strong></article>
+          <article class="path-card"><h3 data-ar="النشر الدولي" data-en="International Publishing">النشر الدولي</h3><p data-ar="تجهيز البحث للمجلات الدولية المناسبة، ومراجعة متطلبات اللغة والتنسيق والتقديم والتحكيم." data-en="Preparing manuscripts for suitable international journals and reviewing language, formatting, submission, and peer-review requirements.">تجهيز البحث للمجلات الدولية المناسبة، ومراجعة متطلبات اللغة والتنسيق والتقديم والتحكيم.</p><strong data-ar="مع الالتزام بسياسات المجلة وإجراءاتها المعلنة." data-en="Always subject to the journal's published policies and procedures.">مع الالتزام بسياسات المجلة وإجراءاتها المعلنة.</strong></article>
+          <article class="path-card"><h3 data-ar="النشر المحلي والعربي" data-en="Local and Arab Publishing">النشر المحلي والعربي</h3><p data-ar="إعداد البحث للمجلات والدوريات المحلية والعربية، مع التحقق من متطلبات الفهرسة ذات الصلة." data-en="Preparing manuscripts for local and Arab journals while checking relevant indexing requirements.">إعداد البحث للمجلات والدوريات المحلية والعربية، مع التحقق من متطلبات الفهرسة ذات الصلة.</p><strong data-ar="ومن أمثلتها: EKB، ودار المنظومة، وArab Citation Index." data-en="Examples include EKB, Al Manhal, and Arab Citation Index.">ومن أمثلتها: EKB، ودار المنظومة، وArab Citation Index.</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners">
+      <div class="container">
+        <div class="section-heading"><h2 data-ar="جهات وخدمات مؤلفين معروفة" data-en="Recognized Author-Service Providers">جهات وخدمات مؤلفين معروفة</h2><p data-ar="للاطلاع والمقارنة فقط؛ لا تمثل هذه الجهات شركاء أو جهات تابعة للمركز، ولا نعتمد ترتيبًا رسميًا بينها." data-en="For reference and comparison only. These organizations are not partners or affiliates of the center, and no official ranking is implied.">للاطلاع والمقارنة فقط؛ لا تمثل هذه الجهات شركاء أو جهات تابعة للمركز، ولا نعتمد ترتيبًا رسميًا بينها.</p></div>
+        <div class="partners">
+          <article class="partner-card"><h3>Editage</h3><p data-ar="خدمات تحرير ودعم للمؤلفين خلال مراحل النشر." data-en="Editing and author support across stages of publication.">خدمات تحرير ودعم للمؤلفين خلال مراحل النشر.</p><a href="https://www.editage.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>Enago</h3><p data-ar="تحرير أكاديمي وخدمات مساندة للباحثين." data-en="Academic editing and support services for researchers.">تحرير أكاديمي وخدمات مساندة للباحثين.</p><a href="https://www.enago.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>AJE</h3><p data-ar="تحرير وتنسيق وترجمة أكاديمية للمخطوطات." data-en="Academic editing, formatting, and translation for manuscripts.">تحرير وتنسيق وترجمة أكاديمية للمخطوطات.</p><a href="https://www.aje.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>Springer Nature Author Services</h3><p data-ar="خدمات تحرير ودعم للمؤلفين والباحثين." data-en="Author and researcher editing and support services.">خدمات تحرير ودعم للمؤلفين والباحثين.</p><a href="https://authorservices.springernature.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>Elsevier Language Editing</h3><p data-ar="خدمة تحرير لغوي للمخطوطات الأكاديمية." data-en="Language editing services for academic manuscripts.">خدمة تحرير لغوي للمخطوطات الأكاديمية.</p><a href="https://webshop.elsevier.com/language-editing/" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>Wordvice</h3><p data-ar="تحرير وترجمة ودعم للمؤلفين." data-en="Editing, translation, and author support services.">تحرير وترجمة ودعم للمؤلفين.</p><a href="https://www.wordvice.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>PaperTrue</h3><p data-ar="تحرير وتنسيق ومراجعة للمحتوى." data-en="Editing, formatting, and proofreading services.">تحرير وتنسيق ومراجعة للمحتوى.</p><a href="https://www.papertrue.com" target="_blank" rel="noopener">Visit website</a></article>
+          <article class="partner-card"><h3>Wiley وTaylor &amp; Francis وScribendi</h3><p data-ar="خدمات مؤلفين وتحرير متاحة عبر جهات ودور نشر مختلفة." data-en="Author services and editing options available across publishers and providers.">خدمات مؤلفين وتحرير متاحة عبر جهات ودور نشر مختلفة.</p></article>
         </div>
       </div>
     </section>
 
     <section id="process">
       <div class="container">
-        <div class="section-heading"><h2>كيف نعمل؟</h2><p>خطوات واضحة تبدأ بفهم احتياجك وتنتهي بتسليم منظم.</p></div>
+        <div class="section-heading"><h2 data-ar="كيف نعمل؟" data-en="How We Work">كيف نعمل؟</h2><p data-ar="خطوات واضحة تبدأ بفهم احتياجك وتنتهي بتسليم منظم." data-en="Clear steps that begin with understanding your needs and end with an organized delivery.">خطوات واضحة تبدأ بفهم احتياجك وتنتهي بتسليم منظم.</p></div>
         <div class="grid steps">
-          <article class="card step"><h3>الاستماع والتقييم</h3><p>نفهم موضوعك ومرحلة بحثك والهدف الأكاديمي المطلوب.</p></article>
-          <article class="card step"><h3>خطة العمل</h3><p>نحدد نطاق الخدمة والمتطلبات والخطوات المناسبة بوضوح.</p></article>
-          <article class="card step"><h3>التنفيذ والمراجعة</h3><p>نعمل على الملفات وفق المعايير المتفق عليها ونراجع المخرجات.</p></article>
-          <article class="card step"><h3>التسليم والمتابعة</h3><p>نسلم العمل منظمًا ونوضح الملاحظات والخطوات التالية عند الحاجة.</p></article>
+          <article class="card step"><h3 data-ar="الاستماع والتقييم" data-en="Listen and Assess">الاستماع والتقييم</h3><p data-ar="نفهم موضوعك ومرحلة بحثك والهدف الأكاديمي المطلوب." data-en="We understand your topic, research stage, and academic objective.">نفهم موضوعك ومرحلة بحثك والهدف الأكاديمي المطلوب.</p></article>
+          <article class="card step"><h3 data-ar="خطة العمل" data-en="Plan the Work">خطة العمل</h3><p data-ar="نحدد نطاق الخدمة والمتطلبات والخطوات المناسبة بوضوح." data-en="We define the scope, requirements, and appropriate steps clearly.">نحدد نطاق الخدمة والمتطلبات والخطوات المناسبة بوضوح.</p></article>
+          <article class="card step"><h3 data-ar="التنفيذ والمراجعة" data-en="Execute and Review">التنفيذ والمراجعة</h3><p data-ar="نعمل على الملفات وفق المعايير المتفق عليها ونراجع المخرجات." data-en="We work according to the agreed standards and review the deliverables.">نعمل على الملفات وفق المعايير المتفق عليها ونراجع المخرجات.</p></article>
+          <article class="card step"><h3 data-ar="التسليم والمتابعة" data-en="Deliver and Follow Up">التسليم والمتابعة</h3><p data-ar="نسلم العمل منظمًا ونوضح الملاحظات والخطوات التالية عند الحاجة." data-en="We deliver organized work and explain notes and next steps when needed.">نسلم العمل منظمًا ونوضح الملاحظات والخطوات التالية عند الحاجة.</p></article>
         </div>
       </div>
     </section>
 
     <section id="why">
       <div class="container">
-        <div class="section-heading"><h2>لماذا نحن؟</h2><p>لأن جودة العمل الأكاديمي تبدأ من فهم التفاصيل واحترام طبيعة البحث.</p></div>
-        <ul class="why"><li>منهجية واضحة وتواصل منظم خلال مراحل العمل.</li><li>اهتمام بالتفاصيل ومتطلبات كل مجلة أو جهة.</li><li>لغة عربية سليمة وصياغة أكاديمية مناسبة.</li><li>التزام بالخصوصية والتعامل المسؤول مع الملفات.</li><li>خدمات مرنة تناسب احتياجات الباحث ومرحلة بحثه.</li><li>مساندة إرشادية دون ادعاء ضمان القبول أو النشر.</li></ul>
+        <div class="section-heading"><h2 data-ar="لماذا نحن؟" data-en="Why Choose Us?">لماذا نحن؟</h2><p data-ar="لأن جودة العمل الأكاديمي تبدأ من فهم التفاصيل واحترام طبيعة البحث." data-en="Because quality academic work begins with attention to detail and respect for the research process.">لأن جودة العمل الأكاديمي تبدأ من فهم التفاصيل واحترام طبيعة البحث.</p></div>
+        <ul class="why">
+          <li data-ar="خدمة ثنائية اللغة بالعربية والإنجليزية." data-en="Bilingual support in Arabic and English.">خدمة ثنائية اللغة بالعربية والإنجليزية.</li>
+          <li data-ar="فهم احتياجات الباحث العربي ومسارات النشر المحلية والدولية." data-en="Understanding Arab researchers and local and international publishing paths.">فهم احتياجات الباحث العربي ومسارات النشر المحلية والدولية.</li>
+          <li data-ar="منهجية واضحة وتواصل منظم خلال مراحل العمل." data-en="A clear methodology and organized communication.">منهجية واضحة وتواصل منظم خلال مراحل العمل.</li>
+          <li data-ar="اهتمام بالتفاصيل ومتطلبات كل مجلة أو جهة." data-en="Attention to each journal's or institution's requirements.">اهتمام بالتفاصيل ومتطلبات كل مجلة أو جهة.</li>
+          <li data-ar="التزام بالخصوصية والتعامل المسؤول مع الملفات." data-en="Respect for privacy and responsible handling of files.">التزام بالخصوصية والتعامل المسؤول مع الملفات.</li>
+          <li data-ar="مساندة إرشادية دون ادعاء ضمان القبول أو النشر." data-en="Guidance without claiming guaranteed acceptance or publication.">مساندة إرشادية دون ادعاء ضمان القبول أو النشر.</li>
+        </ul>
+        <div class="notice" data-ar="نلتزم بأخلاقيات البحث العلمي: لا نكتب الأبحاث بدل الباحث، ولا نبيع أسماء مؤلفين، ولا نقدم وعودًا بالقبول أو النشر." data-en="We uphold research integrity: we do not write research in place of researchers, sell authorship, or promise acceptance or publication.">نلتزم بأخلاقيات البحث العلمي: لا نكتب الأبحاث بدل الباحث، ولا نبيع أسماء مؤلفين، ولا نقدم وعودًا بالقبول أو النشر.</div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="container">
-        <div class="contact-box"><h2>تواصل معنا</h2><p>أرسل استفسارك وملخصًا عن احتياجك الأكاديمي، وسنساعدك على تحديد الخطوة المناسبة.</p><div class="contact-links"><a href="https://wa.me/20XXXXXXXXXX" target="_blank" rel="noopener">تواصل عبر واتساب</a><a href="mailto:YOUR_EMAIL">راسلنا عبر البريد</a></div></div>
-      </div>
+      <div class="container"><div class="contact-box"><h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2><p data-ar="أرسل استفسارك وملخصًا عن احتياجك الأكاديمي، وسنساعدك على تحديد الخطوة المناسبة." data-en="Send your inquiry and a brief description of your academic needs, and we will help identify the appropriate next step.">أرسل استفسارك وملخصًا عن احتياجك الأكاديمي، وسنساعدك على تحديد الخطوة المناسبة.</p><div class="contact-links"><a href="https://wa.me/20XXXXXXXXXX" target="_blank" rel="noopener" data-ar="تواصل عبر واتساب" data-en="Contact via WhatsApp">تواصل عبر واتساب</a><a href="mailto:YOUR_EMAIL" data-ar="راسلنا عبر البريد" data-en="Email us">راسلنا عبر البريد</a></div></div></div>
     </section>
   </main>
 
-  <footer><p>© 2026 <strong>مكتب مِداد للخدمات الأكاديمية</strong> — جميع الحقوق محفوظة.</p></footer>
+  <footer><p>© 2026 <strong data-ar="مركز دكتور سكوبس للخدمات الأكاديمية" data-en="Doctor Scopus Center for Academic Services">مركز دكتور سكوبس للخدمات الأكاديمية</strong> — <span data-ar="جميع الحقوق محفوظة." data-en="All rights reserved.">جميع الحقوق محفوظة.</span></p></footer>
+  <script>
+    const toggle = document.getElementById('languageToggle');
+    let language = 'ar';
+    function setLanguage(next) {
+      language = next;
+      document.documentElement.lang = next;
+      document.body.dir = next === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('[data-ar][data-en]').forEach((element) => { element.textContent = element.dataset[next]; });
+      toggle.textContent = next === 'ar' ? 'English' : 'العربية';
+      document.title = next === 'ar' ? 'مركز دكتور سكوبس | الخدمات الأكاديمية والنشر العلمي' : 'Doctor Scopus Center | Academic Services and Publishing';
+    }
+    toggle.addEventListener('click', () => setLanguage(language === 'ar' ? 'en' : 'ar'));
+  </script>
 </body>
 </html>
